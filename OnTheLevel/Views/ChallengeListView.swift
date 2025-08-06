@@ -7,7 +7,20 @@ struct ChallengeListView: View {
     @State private var selectedDifficulty: ChallengeDifficulty? = nil
     
     private var filteredChallenges: [Challenge] {
-        challengeService.getChallenges(for: selectedCategory, difficulty: selectedDifficulty)
+        let challenges = challengeService.getChallenges(for: selectedCategory, difficulty: selectedDifficulty)
+        return challenges.sorted { lhs, rhs in
+            // First sort by difficulty level
+            let difficultyOrder: [ChallengeDifficulty] = [.beginner, .intermediate, .advanced, .expert]
+            let lhsIndex = difficultyOrder.firstIndex(of: lhs.difficulty) ?? 0
+            let rhsIndex = difficultyOrder.firstIndex(of: rhs.difficulty) ?? 0
+            
+            if lhsIndex != rhsIndex {
+                return lhsIndex < rhsIndex
+            }
+            
+            // Then sort by category within the same difficulty
+            return lhs.category.rawValue < rhs.category.rawValue
+        }
     }
     
     var body: some View {
@@ -89,21 +102,55 @@ struct ChallengeListView: View {
     }
     
     private var challengeGrid: some View {
-        LazyVGrid(columns: [
-            GridItem(.flexible(), spacing: 15),
-            GridItem(.flexible(), spacing: 15)
-        ], spacing: 15) {
-            ForEach(filteredChallenges) { challenge in
-                if challenge.isUnlocked {
-                    NavigationLink(destination: ChallengeDetailView(challenge: challenge).environmentObject(settingsViewModel)) {
-                        ChallengeCard(
-                            challenge: challenge,
-                            bestResult: challengeService.getBestResult(for: challenge.id)
-                        )
+        VStack(spacing: 20) {
+            // Group challenges by difficulty level
+            let groupedChallenges = Dictionary(grouping: filteredChallenges) { $0.difficulty }
+            let sortedDifficulties: [ChallengeDifficulty] = [.beginner, .intermediate, .advanced, .expert]
+            
+            ForEach(sortedDifficulties, id: \.self) { difficulty in
+                if let challengesForDifficulty = groupedChallenges[difficulty], !challengesForDifficulty.isEmpty {
+                    VStack(spacing: 15) {
+                        // Difficulty section header
+                        HStack {
+                            HStack(spacing: 8) {
+                                Image(systemName: "star.fill")
+                                    .font(.title3)
+                                    .foregroundColor(difficulty.color)
+                                
+                                Text(difficulty.rawValue)
+                                    .font(.title2)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(difficulty.color)
+                            }
+                            
+                            Spacer()
+                            
+                            Text("\(challengesForDifficulty.count) challenge\(challengesForDifficulty.count == 1 ? "" : "s")")
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                        }
+                        .padding(.horizontal)
+                        
+                        // Grid for this difficulty level
+                        LazyVGrid(columns: [
+                            GridItem(.flexible(), spacing: 15),
+                            GridItem(.flexible(), spacing: 15)
+                        ], spacing: 15) {
+                            ForEach(challengesForDifficulty.sorted { $0.category.rawValue < $1.category.rawValue }) { challenge in
+                                if challenge.isUnlocked {
+                                    NavigationLink(destination: ChallengeDetailView(challenge: challenge).environmentObject(settingsViewModel)) {
+                                        ChallengeCard(
+                                            challenge: challenge,
+                                            bestResult: challengeService.getBestResult(for: challenge.id)
+                                        )
+                                    }
+                                    .buttonStyle(PlainButtonStyle())
+                                } else {
+                                    LockedChallengeCard(challenge: challenge)
+                                }
+                            }
+                        }
                     }
-                    .buttonStyle(PlainButtonStyle())
-                } else {
-                    LockedChallengeCard(challenge: challenge)
                 }
             }
         }
