@@ -1,6 +1,6 @@
 import Foundation
 
-enum Difficulty: String, CaseIterable {
+enum Difficulty: String, CaseIterable, Codable {
     case easy = "Easy"
     case medium = "Medium"
     case hard = "Hard"
@@ -27,5 +27,5 @@ enum Difficulty: String, CaseIterable {
 
 struct GameSettings {
     var difficulty: Difficulty = .medium
-    var gameDuration: TimeInterval = 20.0
+    var gameDuration: TimeInterval = 10.0
 }

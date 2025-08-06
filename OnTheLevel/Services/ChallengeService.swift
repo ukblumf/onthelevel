@@ -273,4 +273,3 @@ class ChallengeService: ObservableObject {
     }
 }
 
-extension ChallengeResult: Codable {}
