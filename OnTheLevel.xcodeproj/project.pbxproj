@@ -7,49 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A2B3C4D5E6F7890ABCD001 /* OnTheLevelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD002 /* OnTheLevelApp.swift */; };
-		1A2B3C4D5E6F7890ABCD003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD004 /* ContentView.swift */; };
-		1A2B3C4D5E6F7890ABCD005 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD006 /* MenuView.swift */; };
-		1A2B3C4D5E6F7890ABCD007 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD008 /* GameView.swift */; };
-		1A2B3C4D5E6F7890ABCD009 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD010 /* SettingsView.swift */; };
-		1A2B3C4D5E6F7890ABCD011 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD012 /* ResultsView.swift */; };
-		1A2B3C4D5E6F7890ABCD013 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD014 /* GameViewModel.swift */; };
-		1A2B3C4D5E6F7890ABCD015 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD016 /* SettingsViewModel.swift */; };
-		1A2B3C4D5E6F7890ABCD017 /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD018 /* GameSettings.swift */; };
-		1A2B3C4D5E6F7890ABCD019 /* GameScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD020 /* GameScore.swift */; };
-		1A2B3C4D5E6F7890ABCD021 /* MotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD022 /* MotionService.swift */; };
-		1A2B3C4D5E6F7890ABCD023 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD024 /* ColorUtils.swift */; };
-		1A2B3C4D5E6F7890ABCD025 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD026 /* Challenge.swift */; };
-		1A2B3C4D5E6F7890ABCD027 /* ChallengeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD028 /* ChallengeService.swift */; };
-		1A2B3C4D5E6F7890ABCD029 /* ChallengeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD030 /* ChallengeListView.swift */; };
-		1A2B3C4D5E6F7890ABCD031 /* ChallengeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD032 /* ChallengeDetailView.swift */; };
-		1A2B3C4D5E6F7890ABCD033 /* ChallengeGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD034 /* ChallengeGameView.swift */; };
+		AA0001 /* OnTheLevelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0001 /* OnTheLevelApp.swift */; };
+		AA0002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0002 /* ContentView.swift */; };
+		AA0003 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0003 /* MenuView.swift */; };
+		AA0004 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0004 /* GameView.swift */; };
+		AA0005 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0005 /* SettingsView.swift */; };
+		AA0006 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0006 /* ResultsView.swift */; };
+		AA0007 /* ChallengeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0007 /* ChallengeListView.swift */; };
+		AA0008 /* ChallengeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0008 /* ChallengeDetailView.swift */; };
+		AA0009 /* ChallengeGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0009 /* ChallengeGameView.swift */; };
+		AA0010 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0010 /* GameViewModel.swift */; };
+		AA0011 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0011 /* SettingsViewModel.swift */; };
+		AA0012 /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0012 /* GameSettings.swift */; };
+		AA0013 /* GameScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0013 /* GameScore.swift */; };
+		AA0014 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0014 /* Challenge.swift */; };
+		AA0015 /* MotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0015 /* MotionService.swift */; };
+		AA0016 /* ChallengeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0016 /* ChallengeService.swift */; };
+		AA0017 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0017 /* ColorUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A2B3C4D5E6F7890ABCD002 /* OnTheLevelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnTheLevelApp.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD004 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD006 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD008 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD010 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD012 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD014 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD016 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD018 /* GameSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD020 /* GameScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScore.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD022 /* MotionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionService.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD024 /* ColorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD026 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD028 /* ChallengeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeService.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD030 /* ChallengeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeListView.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD032 /* ChallengeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetailView.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD034 /* ChallengeGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeGameView.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD035 /* OnTheLevel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnTheLevel.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A2B3C4D5E6F7890ABCD036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC0001 /* OnTheLevel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnTheLevel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0001 /* OnTheLevelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnTheLevelApp.swift; sourceTree = "<group>"; };
+		BB0002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB0003 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		BB0004 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		BB0005 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BB0006 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		BB0007 /* ChallengeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeListView.swift; sourceTree = "<group>"; };
+		BB0008 /* ChallengeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetailView.swift; sourceTree = "<group>"; };
+		BB0009 /* ChallengeGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeGameView.swift; sourceTree = "<group>"; };
+		BB0010 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		BB0011 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		BB0012 /* GameSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
+		BB0013 /* GameScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScore.swift; sourceTree = "<group>"; };
+		BB0014 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		BB0015 /* MotionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionService.swift; sourceTree = "<group>"; };
+		BB0016 /* ChallengeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeService.swift; sourceTree = "<group>"; };
+		BB0017 /* ColorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
+		DD0001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1A2B3C4D5E6F7890ABCD027 /* Frameworks */ = {
+		EE0001 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,91 +59,91 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A2B3C4D5E6F7890ABCD028 = {
+		FF0001 = {
 			isa = PBXGroup;
 			children = (
-				1A2B3C4D5E6F7890ABCD029 /* OnTheLevel */,
-				1A2B3C4D5E6F7890ABCD030 /* Products */,
+				FF0002 /* OnTheLevel */,
+				FF0003 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1A2B3C4D5E6F7890ABCD029 /* OnTheLevel */ = {
+		FF0002 /* OnTheLevel */ = {
 			isa = PBXGroup;
 			children = (
-				1A2B3C4D5E6F7890ABCD031 /* App */,
-				1A2B3C4D5E6F7890ABCD032 /* Views */,
-				1A2B3C4D5E6F7890ABCD033 /* ViewModels */,
-				1A2B3C4D5E6F7890ABCD034 /* Models */,
-				1A2B3C4D5E6F7890ABCD035 /* Services */,
-				1A2B3C4D5E6F7890ABCD036 /* Utils */,
-				1A2B3C4D5E6F7890ABCD036 /* Info.plist */,
+				FF0004 /* App */,
+				FF0005 /* Views */,
+				FF0006 /* ViewModels */,
+				FF0007 /* Models */,
+				FF0008 /* Services */,
+				FF0009 /* Utils */,
+				DD0001 /* Info.plist */,
 			);
 			path = OnTheLevel;
 			sourceTree = "<group>";
 		};
-		1A2B3C4D5E6F7890ABCD030 /* Products */ = {
+		FF0003 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A2B3C4D5E6F7890ABCD025 /* OnTheLevel.app */,
+				CC0001 /* OnTheLevel.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1A2B3C4D5E6F7890ABCD031 /* App */ = {
+		FF0004 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				1A2B3C4D5E6F7890ABCD002 /* OnTheLevelApp.swift */,
-				1A2B3C4D5E6F7890ABCD004 /* ContentView.swift */,
+				BB0001 /* OnTheLevelApp.swift */,
+				BB0002 /* ContentView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
 		};
-		1A2B3C4D5E6F7890ABCD032 /* Views */ = {
+		FF0005 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1A2B3C4D5E6F7890ABCD006 /* MenuView.swift */,
-				1A2B3C4D5E6F7890ABCD008 /* GameView.swift */,
-				1A2B3C4D5E6F7890ABCD010 /* SettingsView.swift */,
-				1A2B3C4D5E6F7890ABCD012 /* ResultsView.swift */,
-				1A2B3C4D5E6F7890ABCD030 /* ChallengeListView.swift */,
-				1A2B3C4D5E6F7890ABCD032 /* ChallengeDetailView.swift */,
-				1A2B3C4D5E6F7890ABCD034 /* ChallengeGameView.swift */,
+				BB0003 /* MenuView.swift */,
+				BB0004 /* GameView.swift */,
+				BB0005 /* SettingsView.swift */,
+				BB0006 /* ResultsView.swift */,
+				BB0007 /* ChallengeListView.swift */,
+				BB0008 /* ChallengeDetailView.swift */,
+				BB0009 /* ChallengeGameView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		1A2B3C4D5E6F7890ABCD033 /* ViewModels */ = {
+		FF0006 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				1A2B3C4D5E6F7890ABCD014 /* GameViewModel.swift */,
-				1A2B3C4D5E6F7890ABCD016 /* SettingsViewModel.swift */,
+				BB0010 /* GameViewModel.swift */,
+				BB0011 /* SettingsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		1A2B3C4D5E6F7890ABCD034 /* Models */ = {
+		FF0007 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1A2B3C4D5E6F7890ABCD018 /* GameSettings.swift */,
-				1A2B3C4D5E6F7890ABCD020 /* GameScore.swift */,
-				1A2B3C4D5E6F7890ABCD026 /* Challenge.swift */,
+				BB0012 /* GameSettings.swift */,
+				BB0013 /* GameScore.swift */,
+				BB0014 /* Challenge.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		1A2B3C4D5E6F7890ABCD035 /* Services */ = {
+		FF0008 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				1A2B3C4D5E6F7890ABCD022 /* MotionService.swift */,
-				1A2B3C4D5E6F7890ABCD028 /* ChallengeService.swift */,
+				BB0015 /* MotionService.swift */,
+				BB0016 /* ChallengeService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		1A2B3C4D5E6F7890ABCD036 /* Utils */ = {
+		FF0009 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				1A2B3C4D5E6F7890ABCD024 /* ColorUtils.swift */,
+				BB0017 /* ColorUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -151,13 +151,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A2B3C4D5E6F7890ABCD037 /* OnTheLevel */ = {
+		GG0001 /* OnTheLevel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A2B3C4D5E6F7890ABCD038 /* Build configuration list for PBXNativeTarget "OnTheLevel" */;
+			buildConfigurationList = HH0001 /* Build configuration list for PBXNativeTarget "OnTheLevel" */;
 			buildPhases = (
-				1A2B3C4D5E6F7890ABCD039 /* Sources */,
-				1A2B3C4D5E6F7890ABCD027 /* Frameworks */,
-				1A2B3C4D5E6F7890ABCD040 /* Resources */,
+				II0001 /* Sources */,
+				EE0001 /* Frameworks */,
+				JJ0001 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -165,25 +165,25 @@
 			);
 			name = OnTheLevel;
 			productName = OnTheLevel;
-			productReference = 1A2B3C4D5E6F7890ABCD025 /* OnTheLevel.app */;
+			productReference = CC0001 /* OnTheLevel.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1A2B3C4D5E6F7890ABCD041 /* Project object */ = {
+		KK0001 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					1A2B3C4D5E6F7890ABCD037 = {
+					GG0001 = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
-			buildConfigurationList = 1A2B3C4D5E6F7890ABCD042 /* Build configuration list for PBXProject "OnTheLevel" */;
+			buildConfigurationList = LL0001 /* Build configuration list for PBXProject "OnTheLevel" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -191,18 +191,18 @@
 				en,
 				Base,
 			);
-			mainGroup = 1A2B3C4D5E6F7890ABCD028;
-			productRefGroup = 1A2B3C4D5E6F7890ABCD030 /* Products */;
+			mainGroup = FF0001;
+			productRefGroup = FF0003 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A2B3C4D5E6F7890ABCD037 /* OnTheLevel */,
+				GG0001 /* OnTheLevel */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1A2B3C4D5E6F7890ABCD040 /* Resources */ = {
+		JJ0001 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -212,34 +212,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1A2B3C4D5E6F7890ABCD039 /* Sources */ = {
+		II0001 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A2B3C4D5E6F7890ABCD001 /* OnTheLevelApp.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD003 /* ContentView.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD005 /* MenuView.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD007 /* GameView.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD009 /* SettingsView.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD011 /* ResultsView.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD013 /* GameViewModel.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD015 /* SettingsViewModel.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD017 /* GameSettings.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD019 /* GameScore.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD021 /* MotionService.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD023 /* ColorUtils.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD025 /* Challenge.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD027 /* ChallengeService.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD029 /* ChallengeListView.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD031 /* ChallengeDetailView.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD033 /* ChallengeGameView.swift in Sources */,
+				AA0001 /* OnTheLevelApp.swift in Sources */,
+				AA0002 /* ContentView.swift in Sources */,
+				AA0003 /* MenuView.swift in Sources */,
+				AA0004 /* GameView.swift in Sources */,
+				AA0005 /* SettingsView.swift in Sources */,
+				AA0006 /* ResultsView.swift in Sources */,
+				AA0007 /* ChallengeListView.swift in Sources */,
+				AA0008 /* ChallengeDetailView.swift in Sources */,
+				AA0009 /* ChallengeGameView.swift in Sources */,
+				AA0010 /* GameViewModel.swift in Sources */,
+				AA0011 /* SettingsViewModel.swift in Sources */,
+				AA0012 /* GameSettings.swift in Sources */,
+				AA0013 /* GameScore.swift in Sources */,
+				AA0014 /* Challenge.swift in Sources */,
+				AA0015 /* MotionService.swift in Sources */,
+				AA0016 /* ChallengeService.swift in Sources */,
+				AA0017 /* ColorUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1A2B3C4D5E6F7890ABCD043 /* Debug */ = {
+		MM0001 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -302,7 +302,7 @@
 			};
 			name = Debug;
 		};
-		1A2B3C4D5E6F7890ABCD044 /* Release */ = {
+		MM0002 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -358,14 +358,14 @@
 			};
 			name = Release;
 		};
-		1A2B3C4D5E6F7890ABCD045 /* Debug */ = {
+		NN0001 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZDHB8HTR7E;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = OnTheLevel/Info.plist;
@@ -380,7 +380,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bigfinger.OnTheLevel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.OnTheLevel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -388,14 +388,14 @@
 			};
 			name = Debug;
 		};
-		1A2B3C4D5E6F7890ABCD046 /* Release */ = {
+		NN0002 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZDHB8HTR7E;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = OnTheLevel/Info.plist;
@@ -410,7 +410,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bigfinger.OnTheLevel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.OnTheLevel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -421,25 +421,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A2B3C4D5E6F7890ABCD038 /* Build configuration list for PBXNativeTarget "OnTheLevel" */ = {
+		HH0001 /* Build configuration list for PBXNativeTarget "OnTheLevel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A2B3C4D5E6F7890ABCD045 /* Debug */,
-				1A2B3C4D5E6F7890ABCD046 /* Release */,
+				NN0001 /* Debug */,
+				NN0002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A2B3C4D5E6F7890ABCD042 /* Build configuration list for PBXProject "OnTheLevel" */ = {
+		LL0001 /* Build configuration list for PBXProject "OnTheLevel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A2B3C4D5E6F7890ABCD043 /* Debug */,
-				1A2B3C4D5E6F7890ABCD044 /* Release */,
+				MM0001 /* Debug */,
+				MM0002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1A2B3C4D5E6F7890ABCD041 /* Project object */;
+	rootObject = KK0001 /* Project object */;
 }
