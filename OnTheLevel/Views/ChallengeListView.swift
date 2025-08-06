@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ChallengeListView: View {
     @StateObject private var challengeService = ChallengeService()
+    @EnvironmentObject var settingsViewModel: SettingsViewModel
     @State private var selectedCategory: ChallengeCategory? = nil
     @State private var selectedDifficulty: ChallengeDifficulty? = nil
     
@@ -62,7 +63,7 @@ struct ChallengeListView: View {
                             title: category.rawValue,
                             icon: category.iconName,
                             isSelected: selectedCategory == category,
-                            color: Color(category.color)
+                            color: category.color
                         ) {
                             selectedCategory = selectedCategory == category ? nil : category
                         }
@@ -76,7 +77,7 @@ struct ChallengeListView: View {
                             title: difficulty.rawValue,
                             icon: "star.fill",
                             isSelected: selectedDifficulty == difficulty,
-                            color: Color(difficulty.color)
+                            color: difficulty.color
                         ) {
                             selectedDifficulty = selectedDifficulty == difficulty ? nil : difficulty
                         }
@@ -144,7 +145,7 @@ struct ChallengeCard: View {
             VStack(spacing: 8) {
                 Image(systemName: challenge.iconName)
                     .font(.system(size: 30))
-                    .foregroundColor(Color(challenge.category.color))
+                    .foregroundColor(challenge.category.color)
                 
                 Text(challenge.title)
                     .font(.headline)
@@ -237,7 +238,7 @@ struct DifficultyBadge: View {
             .fontWeight(.semibold)
             .padding(.horizontal, 6)
             .padding(.vertical, 2)
-            .background(Color(difficulty.color))
+            .background(difficulty.color)
             .foregroundColor(.white)
             .cornerRadius(4)
     }

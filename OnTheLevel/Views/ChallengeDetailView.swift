@@ -42,12 +42,12 @@ struct ChallengeDetailView: View {
         VStack(spacing: 15) {
             ZStack {
                 Circle()
-                    .fill(Color(challenge.category.color).opacity(0.2))
+                    .fill(challenge.category.color.opacity(0.2))
                     .frame(width: 100, height: 100)
                 
                 Image(systemName: challenge.iconName)
                     .font(.system(size: 40, weight: .medium))
-                    .foregroundColor(Color(challenge.category.color))
+                    .foregroundColor(challenge.category.color)
             }
             
             VStack(spacing: 8) {
@@ -171,7 +171,7 @@ struct ChallengeDetailView: View {
                 .foregroundColor(.white)
                 .padding()
                 .frame(maxWidth: .infinity)
-                .background(Color(challenge.category.color))
+                .background(challenge.category.color)
                 .cornerRadius(12)
             }
             
@@ -305,7 +305,7 @@ struct ChallengeInstructionsView: View {
                 VStack(spacing: 20) {
                     Image(systemName: challenge.iconName)
                         .font(.system(size: 60))
-                        .foregroundColor(Color(challenge.category.color))
+                        .foregroundColor(challenge.category.color)
                         .padding()
                     
                     VStack(spacing: 15) {

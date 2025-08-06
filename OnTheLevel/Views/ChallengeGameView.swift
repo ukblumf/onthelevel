@@ -143,7 +143,7 @@ struct ChallengeGameView: View {
                 }
                 .font(.title2)
                 .fontWeight(.semibold)
-                .foregroundColor(Color(challenge.category.color))
+                .foregroundColor(challenge.category.color)
                 .padding(.horizontal, 40)
                 .padding(.vertical, 15)
                 .background(.white)
@@ -285,7 +285,7 @@ struct ChallengeResultsView: View {
             VStack(spacing: 15) {
                 Image(systemName: result.completed ? "trophy.fill" : challenge.iconName)
                     .font(.system(size: 60))
-                    .foregroundColor(result.completed ? .yellow : Color(challenge.category.color))
+                    .foregroundColor(result.completed ? .yellow : challenge.category.color)
                 
                 Text(result.completed ? "Challenge Complete!" : "Challenge Attempted")
                     .font(.largeTitle)
@@ -339,7 +339,7 @@ struct ChallengeResultsView: View {
                     value: challenge.difficulty.rawValue,
                     subtitle: "",
                     icon: "star.fill",
-                    color: Color(challenge.difficulty.color)
+                    color: challenge.difficulty.color
                 )
                 
                 StatCard(
@@ -355,7 +355,7 @@ struct ChallengeResultsView: View {
                     value: challenge.category.rawValue,
                     subtitle: "",
                     icon: challenge.category.iconName,
-                    color: Color(challenge.category.color)
+                    color: challenge.category.color
                 )
             }
             
@@ -371,7 +371,7 @@ struct ChallengeResultsView: View {
                     .foregroundColor(.white)
                     .padding()
                     .frame(maxWidth: .infinity)
-                    .background(Color(challenge.category.color))
+                    .background(challenge.category.color)
                     .cornerRadius(12)
                 }
                 
@@ -394,7 +394,7 @@ struct ChallengeResultsView: View {
         .background(
             LinearGradient(
                 colors: [
-                    Color(challenge.category.color).opacity(0.1),
+                    challenge.category.color.opacity(0.1),
                     Color.clear
                 ],
                 startPoint: .top,

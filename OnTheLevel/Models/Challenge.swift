@@ -1,4 +1,5 @@
 import Foundation
+import SwiftUI
 
 enum ChallengeDifficulty: String, CaseIterable, Identifiable {
     case beginner = "Beginner"
@@ -8,12 +9,12 @@ enum ChallengeDifficulty: String, CaseIterable, Identifiable {
     
     var id: String { rawValue }
     
-    var color: String {
+    var color: Color {
         switch self {
-        case .beginner: return "green"
-        case .intermediate: return "blue"
-        case .advanced: return "orange"
-        case .expert: return "red"
+        case .beginner: return .green
+        case .intermediate: return .blue
+        case .advanced: return .orange
+        case .expert: return .red
         }
     }
     
@@ -44,12 +45,12 @@ enum ChallengeCategory: String, CaseIterable, Identifiable {
         }
     }
     
-    var color: String {
+    var color: Color {
         switch self {
-        case .movement: return "blue"
-        case .balance: return "green"
-        case .strength: return "red"
-        case .coordination: return "purple"
+        case .movement: return .blue
+        case .balance: return .green
+        case .strength: return .red
+        case .coordination: return .purple
         }
     }
 }
@@ -88,7 +89,7 @@ struct Challenge: Identifiable, Hashable {
     }
 }
 
-struct ChallengeResult: Identifiable {
+struct ChallengeResult: Identifiable, Codable {
     let id = UUID()
     let challengeId: String
     let score: Double
