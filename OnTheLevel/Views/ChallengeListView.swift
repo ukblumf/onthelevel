@@ -95,7 +95,7 @@ struct ChallengeListView: View {
         ], spacing: 15) {
             ForEach(filteredChallenges) { challenge in
                 if challenge.isUnlocked {
-                    NavigationLink(destination: ChallengeDetailView(challenge: challenge)) {
+                    NavigationLink(destination: ChallengeDetailView(challenge: challenge).environmentObject(settingsViewModel)) {
                         ChallengeCard(
                             challenge: challenge,
                             bestResult: challengeService.getBestResult(for: challenge.id)

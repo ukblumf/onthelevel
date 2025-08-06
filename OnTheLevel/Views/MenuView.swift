@@ -26,7 +26,7 @@ struct MenuView: View {
                     MenuButton(title: "Play", icon: "play.fill", color: .green)
                 }
                 
-                NavigationLink(destination: ChallengeListView()) {
+                NavigationLink(destination: ChallengeListView().environmentObject(settingsViewModel)) {
                     MenuButton(title: "Challenges", icon: "target", color: .purple)
                 }
                 
